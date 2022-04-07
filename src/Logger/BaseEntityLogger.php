@@ -22,11 +22,11 @@ class BaseEntityLogger implements LoggerInterface
     /**
      * @var LogRecordInterface[]
      */
-    private array $pendingLogRecordInserts;
+    private array $pendingLogRecordInserts = [];
 
-    private string $logRecordClass;
+    private string $logRecordClass = '';
 
-    private array $defaultExcludedProperties;
+    private array $defaultExcludedProperties = [];
 //endregion Fields
 
 //region SECTION: Constructor
